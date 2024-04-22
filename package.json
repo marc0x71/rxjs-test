@@ -1,0 +1,20 @@
+{
+  "name": "rxjs-test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "serve": "parcel index.html"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "rxjs": "^7.8.1"
+  }
+}
