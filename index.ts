@@ -23,9 +23,10 @@ of(10, 20, 30).subscribe({
 });
 
 const btn$ = fromEvent(document.getElementById("btn")!, "click").pipe(
-  map(e => {
-    return (document.getElementById("txt")as HTMLInputElement).value
+  map((e) => {
+    return (document.getElementById("txt") as HTMLInputElement).value;
   }),
+  filter((txt) => txt.length > 2)
 );
 
 const txt$ = fromEvent(document.getElementById("txt")!, "input").pipe(
@@ -45,7 +46,7 @@ merge(btn$, txt$)
     )
   )
   .subscribe(console.log);
-  
+
 // fromEvent(document.getElementById("txt")!, "input")
 //   .pipe(
 //     map((e) => (e.target as HTMLInputElement).value),
